@@ -1,5 +1,5 @@
 
- #' @export get_intercatch
+  #' @export get_intercatch
   get_intercatch <- function() intercatch
   #' @export get_intercatch_merc
   get_intercatch_merc <- function() intercatch_merc
