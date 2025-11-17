@@ -8,7 +8,7 @@
   #' @export get_cdat
   get_cdat <- function() cdat
   #' @export get_country_boundaries
-  get_country_boundaries <- function() country_shape4326
+  get_country_boundaries <- function() country_boundaries
 
 # for internal data (sysdata.rda) : accessor function in beaverAppData for beaverApp
 
