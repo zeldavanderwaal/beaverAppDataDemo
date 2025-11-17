@@ -18,10 +18,10 @@
   #'
   #' @return A [`terra::SpatRaster`].
   #' @export  get_hab_3857w
-  get_hab_3857w <- function() {
-    f <- system.file("extdata", "hab_3857w.tif", package = "beaverAppDataDemo")
+  get_habitat_3857  <- function() {
+    f <- system.file("extdata", "habitat_3857.tif", package = "beaverAppDataDemo")
     if (f == "") {
-      stop("hab_3857w.tif not found in beaverAppDataDemo::inst/extdata",
+      stop("habitat_3857.tif not found in beaverAppDataDemo::inst/extdata",
            call. = FALSE)
     }
     terra::rast(f)
