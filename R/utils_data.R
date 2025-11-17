@@ -17,7 +17,7 @@
   #' Returns the wrapped habitat SpatRaster (EPSG:3857) shipped with the package.
   #'
   #' @return A [`terra::SpatRaster`].
-  #' @export  get_hab_3857w
+  #' @export  get_habitat_3857
   get_habitat_3857  <- function() {
     f <- system.file("extdata", "habitat_3857.tif", package = "beaverAppDataDemo")
     if (f == "") {
