@@ -6,3 +6,6 @@ hab_3857w <- terra::wrap(habitat_raster3857)
 
 #usethis::use_data(hab_3857w, overwrite = TRUE, internal=FALSE)
 cat("hab_3857w\n")
+
+
+## note: a wraped raster that still points to a raster on disc is NOT PORTABLE...
