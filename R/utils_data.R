@@ -5,8 +5,6 @@
   get_intercatch_merc <- function() intercatch_merc
   #' @export get_suitablePatches
   get_suitablePatches <- function() suitablePatches
-  #' @export get_hab_3857w
-  get_hab_3857w <- function() hab_3857w
   #' @export get_cdat
   get_cdat <- function() cdat
   #' @export get_country_boundaries
@@ -14,3 +12,17 @@
 
 # for internal data (sysdata.rda) : accessor function in beaverAppData for beaverApp
 
+  #' Wrapped habitat raster for the beaver app
+  #'
+  #' Returns the wrapped habitat SpatRaster (EPSG:3857) shipped with the package.
+  #'
+  #' @return A [`terra::SpatRaster`].
+  #' @export
+  get_hab_3857w <- function() {
+    f <- system.file("extdata", "hab_3857w.tif", package = "beaverAppDataDemo")
+    if (f == "") {
+      stop("hab_3857w.tif not found in beaverAppDataDemo::inst/extdata",
+           call. = FALSE)
+    }
+    terra::rast(f)
+  }
