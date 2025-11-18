@@ -2,13 +2,13 @@
 % Please edit documentation in R/utils_data.R
 \name{get_habitat_3857}
 \alias{get_habitat_3857}
-\title{Wrapped habitat raster for the beaver app}
+\title{habitat raster}
 \usage{
 get_habitat_3857()
 }
 \value{
-A \code{\link[terra:SpatRaster-class]{terra::SpatRaster}}.
+the habitat \code{\link[terra:SpatRaster-class]{terra::SpatRaster}} (EPSG:3857) describing suitability for beaver settlement/dispersal, to be shipped with the package
 }
 \description{
-Returns the wrapped habitat SpatRaster (EPSG:3857) shipped with the package.
+raster for the beaver app, stored in beaverAppData/data/extdata because large
 }

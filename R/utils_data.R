@@ -21,12 +21,10 @@
   get_NBNAtlas_provs <- function() NBNAtlas_provs
 
 
-  #' Wrapped habitat raster for the beaver app
-  #' stored in data/extdata because large
-  #' returns the habitat SpatRaster (EPSG:3857) shipped with the package
-  #'
-  #' @return A [`terra::SpatRaster`].
-  #' @export  get_habitat_3857
+  #' @title habitat raster
+  #' @description raster for the beaver app, stored in beaverAppData/data/extdata because large
+  #' @return the habitat [`terra::SpatRaster`] (EPSG:3857) describing suitability for beaver settlement/dispersal, to be shipped with the package
+  #' @export
   get_habitat_3857  <- function() {
     f <- system.file("extdata", "habitat3857.tif", package = "beaverAppDataDemo")
     if (f == "") {
@@ -34,6 +32,3 @@
     }
     terra::rast(f)
   }
-
-
-  cat("\nloaded beaverApp data\n")
