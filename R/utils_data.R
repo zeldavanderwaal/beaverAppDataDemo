@@ -26,3 +26,6 @@
     }
     terra::rast(f)
   }
+
+
+  cat("\nloaded beaverApp data\n")
