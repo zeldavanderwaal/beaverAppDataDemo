@@ -1,4 +1,4 @@
+filename <- "country_shape4326.shp"
+country_boundaries <- sf::st_read(paste0(rawDataPath, filename) , quiet=TRUE)
 
-filename <- "country_shape4326"
-country_shape4326 <- sf::st_read(paste0(rawDataPath, fileName) , quiet=TRUE)
-cat("country_boundaries\n")
+cat("get country_boundaries: ", filename,"\n")
