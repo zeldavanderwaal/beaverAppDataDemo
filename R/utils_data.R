@@ -28,7 +28,7 @@
   get_habitat_3857  <- function() {
     f <- system.file("extdata", "habitat3857.tif", package = "beaverAppDataDemo")
     if (f == "") {
-      stop("habitat_3857.tif not found in beaverAppDataDemo::inst/extdata", call. = FALSE)
+      stop("beaverAppDataDemo::inst/extdata/habitat_3857.tif not found", call. = FALSE)
     }
     terra::rast(f)
   }
